@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sami-surgical-pruner"
+version = "1.0.0"
+description = "SAMI Surgical Layer Pruning & GGUF Block Dropper for Hybrid SSM-Transformer LLMs"
+authors = [
+    { name = "Spiridon Valentin", email = "contact@tsvconsulting.online" }
+]
+readme = "README.md"
+license = { text = "PolyForm Noncommercial 1.0.0" }
+requires-python = ">=3.9"
+dependencies = [
+    "numpy>=1.24.0",
+    "torch>=2.0.0",
+    "safetensors>=0.4.0",
+    "huggingface_hub>=0.20.0"
+]
+keywords = ["llm", "pruning", "compression", "gguf", "qwen", "mamba", "shortgpt", "llama-cpp"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+[project.scripts]
+sami-gguf-prune = "sami_gguf_layer_pruner:main"
