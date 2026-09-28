@@ -31,3 +31,10 @@ dist/
 *.tmp
 *.csv
 .system_generated/
+
+# Proprietary Core Engine & White Paper (TSV Consulting Trade Secret)
+sami_topological_moe/
+tests/
+*WHITE_PAPER*.md
+*white_paper*.md
+
